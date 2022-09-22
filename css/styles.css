@@ -3,6 +3,18 @@
     font-family: 'Exo', sans-serif;
 }
 
+h1 {
+    font-size: 3.2rem;
+}
+
+.container {
+    padding: 0 10px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+}
+
 .flex {
     display: flex;
     gap: var(--gap, 3rem);
@@ -15,7 +27,6 @@
 .primary-header {
     align-items: center;
     justify-content: space-between;
-    padding: 1% 15%;
     background-color: #E5E5E5;
 }
 
@@ -32,16 +43,48 @@
 
 @media (max-width: 35em) {
     .primary-navigation {
+        z-index: 10000;
         position: fixed;
         inset: 0 0 0 40%;
         background: steelblue;
 
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
+
+        display: none;
     }
 }
 
+/* BANNER */
+
+#banner {
+    background-color: lightsalmon;
+    padding: 20px 0;
+}
+
 /* HERO */
-h1 {
-    font-size: 3.2rem;
+
+#hero {
+    background-color: white;
+    height: 100vh;
+    
+}
+
+.bg-image {
+    background: url("/images/camper-van.jpeg");
+    background-size: cover;
+    height: 55vh;
+}
+
+.book-now {
+    position: relative;
+    background-color: #E5E5E5;
+    top: 260px;
+    padding: 25px;
+    border-radius: 2%;
+}
+
+/*ABOUT*/
+#about-us {
+    background-color: #E5E5E5;
 }
