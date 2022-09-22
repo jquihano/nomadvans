@@ -7,8 +7,12 @@ h1 {
     font-size: 3.2rem;
 }
 
+h2 {
+    font-size: 2.4rem;
+}
+
 .container {
-    padding: 0 10px;
+    padding: 0 20px;
     margin: auto;
     position: relative;
     width: 100%;
@@ -29,7 +33,7 @@ h1 {
     justify-content: space-between;
     background-color: #E5E5E5;
 }
-
+/* NAV BAR */
 
 .primary-navigation {
     list-style: none;
@@ -39,6 +43,16 @@ h1 {
 .primary-navigation a {
     font-size: 1.6rem;
     text-decoration: none;
+}
+
+.nav-btn {
+    font-size: 1.3rem;
+    padding: 5px 12px;
+    margin-right: 2rem;
+    background-color: #E28641;
+    color: white;
+    border: none;
+    border-radius: 5%;
 }
 
 @media (max-width: 35em) {
@@ -62,24 +76,40 @@ h1 {
     padding: 20px 0;
 }
 
+.announcements p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
 /* HERO */
 
 #hero {
     background-color: white;
-    height: 100vh;
-    
+    height: 80vh;
+    text-align: center;
+}
+
+.hero-content h1 {
+    padding: 40px 0;
+    color: white;
+}
+
+.hero-p {
+    font-size: 1.8rem;
+    padding-bottom: 25px;
+    color: white;
 }
 
 .bg-image {
     background: url("/images/camper-van.jpeg");
     background-size: cover;
-    height: 55vh;
+    height: 60vh;
 }
 
 .book-now {
     position: relative;
     background-color: #E5E5E5;
-    top: 200px;
+    top: 150px;
     margin: auto;
     width: 60%;
     padding: 25px;
@@ -92,11 +122,29 @@ h1 {
 }
 
 .form-elem input, .form-elem button{
+    font-size: 1.4rem;
     padding: 15px 0;
     margin: 5px;
 }
 
 /*ABOUT*/
 #about-us {
-    background-color: #E5E5E5;
+    padding: 50px 20px;
+}
+
+.about-head {
+    padding: 1.5rem 0;
+    font-size: 3.2rem;
+}
+
+.about-image {
+    border-radius: 5%;
+    height: 260px;
+    padding: 2rem 0;
+}
+
+.about-content {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
 }
