@@ -79,9 +79,21 @@ h1 {
 .book-now {
     position: relative;
     background-color: #E5E5E5;
-    top: 260px;
+    top: 200px;
+    margin: auto;
+    width: 60%;
     padding: 25px;
     border-radius: 2%;
+}
+
+.form-elem{
+ display: flex;
+ flex-direction: column;
+}
+
+.form-elem input, .form-elem button{
+    padding: 15px 0;
+    margin: 5px;
 }
 
 /*ABOUT*/
