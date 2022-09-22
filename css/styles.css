@@ -1,0 +1,47 @@
+* {
+    font-size: 62.5%;
+    font-family: 'Exo', sans-serif;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 3rem);
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 15%;
+    background-color: #E5E5E5;
+}
+
+
+.primary-navigation {
+    list-style: none;
+    margin: 0;
+}
+
+.primary-navigation a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+@media (max-width: 35em) {
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 40%;
+        background: steelblue;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+    }
+}
+
+/* HERO */
+h1 {
+    font-size: 3.2rem;
+}
