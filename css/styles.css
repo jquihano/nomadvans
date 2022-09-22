@@ -11,6 +11,10 @@ h2 {
     font-size: 2.4rem;
 }
 
+button{
+    cursor: pointer;
+}
+
 .container {
     padding: 0 20px;
     margin: auto;
@@ -31,7 +35,6 @@ h2 {
 .primary-header {
     align-items: center;
     justify-content: space-between;
-    background-color: #E5E5E5;
 }
 /* NAV BAR */
 
@@ -72,7 +75,7 @@ h2 {
 /* BANNER */
 
 #banner {
-    background-color: lightsalmon;
+    background-color: #FEF4EC;
     padding: 20px 0;
 }
 
@@ -108,12 +111,15 @@ h2 {
 
 .book-now {
     position: relative;
-    background-color: #E5E5E5;
+    background-color: white;
     top: 150px;
     margin: auto;
     width: 60%;
     padding: 25px;
     border-radius: 2%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #E5E5E5;
 }
 
 .form-elem{
@@ -125,6 +131,7 @@ h2 {
     font-size: 1.4rem;
     padding: 15px 0;
     margin: 5px;
+    text-align: center;
 }
 
 /*ABOUT*/
@@ -147,4 +154,21 @@ h2 {
     line-height: 1.5;
     font-size: 1.6rem;
     padding-bottom: 2rem;
+}
+
+/* TESTIMONIALS */
+#testimonials{
+    background-color: aquamarine;
+}
+
+.testimonial-quote {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 65%;
+}
+
+.author {
+    text-align: center;
+    font-size: 2rem;
 }
