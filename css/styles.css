@@ -156,7 +156,7 @@ image {
 #about-us {
     padding: 50px 20px;
     align-items: center;
-    margin: 25rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
 .about-head {
@@ -232,6 +232,9 @@ image {
     flex-direction: row;
     justify-content: center;
  }
+
+ 
+
 }
 
 @media screen and (min-width: 550px){
@@ -261,6 +264,10 @@ image {
         max-width: 40%;
     }
 
+    #about-us {
+        margin: 20rem 0 1rem 0;
+    }
+    
     .container {
         max-width: 1100px;
         
