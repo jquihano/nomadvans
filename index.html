@@ -18,12 +18,12 @@
     <!--        -->
     <!-- HEADER -->
     <!--        -->
-    <header class="primary-header flex">
+    <header class="primary-header flex-nav">
       <div>
         <img class="logo" src="images/van-.png" alt="Nomad Vans" />
       </div>
       <nav>
-        <ul class="primary-navigation flex">
+        <ul class="primary-navigation flex-nav">
           <li><a href="">About Us</a></li>
           <li><a href="">Trip Planning</a></li>
           <li><a href="">Locations</a></li>
@@ -52,7 +52,6 @@
     <main>
       <section id="hero">
         <div class="container bg-image">
-          <div class="even-columns">
             <div class="hero-content">
               <h1>Seattle</h1>
               <p class="hero-p">
@@ -68,24 +67,32 @@
                 <button>></button>
               </form>
             </div>
-          </div>
         </div>
       </section>
 
       <section id="about-us">
         <div class="container">
-          <div class="even-columns">
+            <div class="flex">
+              <div>
+              <img class="about-image" src="/images/explore.jpeg" alt="" />
+            </div>
             <div>
               <h2 class="about-head">Explore With Us!</h2>
-              <img class="about-image" src="/images/explore.jpeg" alt="" />
               <p class="about-content">
                 Nomad Vans provides all the features you could ever desire, vans
                 on our platform are custom built for all types of adventures!
               </p>
+              <p class="about-content">
+              Washington’s three national parks are all within three hours of Seattle: the volcanic Mt. Rainier whose majesty is obvious even from the city; North Cascades National Park for jaw dropping mountain views; and Olympic National Park, our most popular destination.
+              </p>
+            </div>
+            </div>
+            <div class="flex flex-reverse">
+            <div>
+              <img class="about-image" src="/images/winter-van.jpg" alt="" />
             </div>
             <div>
               <h2 class="about-head">Discover your dream trip</h2>
-              <img class="about-image" src="/images/winter-van.jpg" alt="" />
               <p class="about-content">
                 Grab your flannels and get ready for adventure! From harvest
                 season in the wine valleys to ski season on the many mountains.
@@ -100,19 +107,26 @@
     <!-- HIGHLIGHTS  -->
     <!------------------->
 
-    <section>
-      <div class="container">
+    <section id="views">
         <h2>Regional Highlights</h2>
-        <div>
-          <img src="" alt="" />
+      <div class="container flex flex-quad">
+        <div class="views">
+          <img class="views-img" src="./images/rainier.jpeg" alt="" />
           <p>Mt. Rainier</p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img class="views-img" src="./images/olympic.jpeg" alt="" />
           <p>Olympic Peninsula</p>
         </div>
+        </div>
+      </div>
+      <div class="container flex flex-quad">
         <div>
-          <img src="" alt="" />
+          <img class="views-img" src="./images/cascades.jpeg" alt="" />
+          <p>The Casacades Loop</p>
+        </div>
+        <div>
+          <img class="views-img" src="./images/cascades.jpeg" alt="" />
           <p>The Casacades Loop</p>
         </div>
       </div>
@@ -129,7 +143,7 @@
             "The entire experience was excellent. From arriving at the vehicle, to the check in, to camping and check out. It was entirely stress free."
           </p>
           <div class="testmonial-author">
-          <h4 class="author">John</h4>
+          <h4 class="author">Rebecca</h4>
           </div>
         </div>
       </section>

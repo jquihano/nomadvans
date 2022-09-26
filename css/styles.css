@@ -15,21 +15,28 @@ button{
     cursor: pointer;
 }
 
+image {
+    width: 100%;
+}
+
 .container {
     padding: 0 20px;
     margin: auto;
     position: relative;
     width: 100%;
-    max-width: 450px;
+    max-width: 560px;
 }
 
 .flex {
     display: flex;
-    gap: var(--gap, 3rem);
+    flex-direction: column;
+    gap: var(--gap, 5rem);
 }
+
 
 .logo {
     max-width: 100px;
+    margin: 0 1rem;
 }
 
 .primary-header {
@@ -37,6 +44,11 @@ button{
     justify-content: space-between;
 }
 /* NAV BAR */
+
+.flex-nav {
+    display: flex;
+    gap: var(--gap, 3rem);
+}
 
 .primary-navigation {
     list-style: none;
@@ -88,7 +100,7 @@ button{
 
 #hero {
     background-color: white;
-    height: 80vh;
+    height: 90vh;
     text-align: center;
 }
 
@@ -112,7 +124,7 @@ button{
 .book-now {
     position: relative;
     background-color: white;
-    top: 150px;
+    top: 100px;
     margin: auto;
     width: 60%;
     padding: 25px;
@@ -137,17 +149,23 @@ button{
 /*ABOUT*/
 #about-us {
     padding: 50px 20px;
+    align-items: center;
 }
 
 .about-head {
     padding: 1.5rem 0;
     font-size: 3.2rem;
+    text-align: center;
 }
 
 .about-image {
     border-radius: 5%;
-    height: 260px;
     padding: 2rem 0;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 240px;
+    border-radius: 5%;
+
 }
 
 .about-content {
@@ -171,4 +189,62 @@ button{
 .author {
     text-align: center;
     font-size: 2rem;
+}
+
+#views {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.views-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    align-self: center;
+}
+
+.flex-quad {
+    align-items: center;
+ }
+
+@media screen and (min-width: 480px){
+ .flex-quad {
+    flex-direction: row;
+    justify-content: center;
+ }
+}
+
+@media screen and (min-width: 990px){
+    .flex {
+        flex-direction: row;
+    }
+
+    .bg-image{
+        min-width: 100%;
+        height: 660px;
+    }
+
+    .book-now {
+        top: 180px;
+        max-width: 40%;
+    }
+
+    .container {
+        max-width: 1000px;
+       
+    }
+    
+    .about-image {
+        min-width: 500px;
+        height: 500px;
+    }
+
+    .flex-reverse {
+        flex-direction: row-reverse;
+        gap: var(--gap, 10rem);
+    }
+
+    .flex-quad {
+        flex-direction: row;
+    }
 }
